@@ -53,8 +53,6 @@ const ProductCard: FC<Props> = ({
               </h3>
               <span className={s.productPrice}>
                 {product.price.value}
-                &nbsp;
-                {product.price.currencyCode}
               </span>
             </div>
             {process.env.COMMERCE_WISHLIST_ENABLED && (

@@ -121,7 +121,7 @@ const CartItem = ({
                 key={`${item.id}-${option.name}`}
                 className="text-sm font-semibold text-accents-7"
               >
-                {option.value}
+                {option.value ==== default ? '' : {option.name}}
                 {i === options.length - 1 ? '' : ', '}
               </span>
             ))}
